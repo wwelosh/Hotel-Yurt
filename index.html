@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Issyk-Kul Yurt Hotel</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Rubik+Moonrocks&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons + Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Calendar -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <section class="hero" data-aos="fade-in">
+    <header class="main-header">
+      <nav>
+        <h1 data-i18n="title">Issyk-Kul Yurt Hotel</h1>
+        <ul class="nav-menu">
+          <li><a href="#about" data-i18n="nav.about">О нас</a></li>
+          <li><a href="#accommodation" data-i18n="nav.accommodation">Комнаты</a></li>
+          <li><a href="#activities" data-i18n="nav.activities">Развлечения</a></li>
+          <li><a href="#booking-form" data-i18n="nav.booking-form">Бронирование</a></li>
+          <li><a href="#map-container" data-i18n="nav.map-container">Карта</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="header-icon">
+      <a href="https://wa.me/qr/37UMOBCKY2L3L1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/wwelosh" target="_blank"><i class="fab fa-telegram"></i></a>
+      <a href="https://github.com/wwelosh/registration-icon" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <div class="inprod">
+      <h2 data-i18n="hero.title">Issyk-Kul</h2>
+      <p data-i18n="hero.subtitle">The Southern Shore of Issyk-Kul Lake, Kyrgyzstan</p>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>О нас</h2>
+        <p>
+          Добро пожаловать в юрточный курорт у южного берега Иссык-Куля — уникальное пространство,
+          где величие природы сочетается с уютом кочевой культуры.
+        </p>
+        <p>
+          Здесь вас ждёт гармония, свежесть горного воздуха и неспешный ритм отдыха. Это не просто размещение — это
+          опыт, к которому хочется возвращаться.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight">
+            <h4>🏕 Аутентичные юрты</h4>
+            <p>Ручной работы, с тёплой атмосферой и заботой о деталях.</p>
+          </div>
+          <div class="highlight">
+            <h4>🌿 Природа и тишина</h4>
+            <p>Лес, горы, озеро — идеальные декорации для перезагрузки.</p>
+          </div>
+          <div class="highlight">
+            <h4>🔥 Каминные вечера</h4>
+            <p>Согрейтесь у огня, наслаждаясь звёздным небом и чайханой атмосферой.</p>
+          </div>
+        </div>
+  </section>
+
+  <section id="accommodation"
+    style="max-width: 900px; margin: 40px auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <h2 style="text-align: center; margin-bottom: 30px; font-size: 2.2rem; color: #2c3e50;">Варианты проживания</h2>
+
+    <div class="yurt-item">
+      <img class="yurt-photo" src="./проживание 2.jpg" alt="Проживание на 2 человека" />
+      <div class="yurt-info-block">
+        <h3>Юрта на 2 человека</h3>
+        <p>Уютная юрта для пары, с отдельной зоной отдыха и завтраком.</p>
+        <ul>
+          <li>Зона: 1</li>
+          <li>Макс. гостей: 1</li>
+          <li>Завтрак включён</li>
+          <li>Цена: 3000 сом/ночь</li>
+        </ul>
+        <button class="book-btn">Забронировать</button>
+      </div>
+    </div>
+
+    <div class="yurt-item">
+      <img class="yurt-photo" src="./проживание 3 закат.png" alt="Проживание на 3 человека" />
+      <div class="yurt-info-block">
+        <h3>Юрта на 2 человека</h3>
+        <p>Просторная юрта с дополнительным местом и видом на горы.</p>
+        <ul>
+          <li>Зона: 2</li>
+          <li>Макс. гостей: 3</li>
+          <li>Завтрак включён</li>
+          <li>Цена: 4500 сом/ночь</li>
+        </ul>
+        <button class="book-btn">Забронировать</button>
+      </div>
+    </div>
+
+    <div class="yurt-item">
+      <img class="yurt-photo" src="./проживание 1.jpg" alt="Проживание на 4 человека" />
+      <div class="yurt-info-block">
+        <h3>Юрта на 3 и более человека</h3>
+        <p>Большая юрта с двумя зонами отдыха, идеальна для семьи.</p>
+        <ul>
+          <li>Зона: 3</li>
+          <li>Макс. гостей: 5</li>
+          <li>Завтрак включён</li>
+          <li>Цена: 6000(взависимости от кол-ва) сом/ночь</li>
+        </ul>
+        <button class="book-btn" onclick="showBookingForm()">Забронировать</button>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="booking-form2" class="form-section"
+    style="display:none; max-width: 700px; margin: 40px auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <h2 style="text-align:center; margin-bottom: 20px; color:#2c3e50;">Форма бронирования</h2>
+    <form action="https://formspree.io/f/manjjorj" method="POST" id="bookingForm">
+      <label for="yurt-type">Выберите юрту:</label>
+      <select id="yurt-type" name="yurt-type" required>
+        <option value="" disabled selected>Выберите юрту</option>
+        <option value="2_person">Юрта на 1 человека</option>
+        <option value="3_person">Юрта на 2 человека</option>
+        <option value="4_person">Юрта на 3 и более человека</option>
+      </select>
+
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" placeholder="Имя" required />
+
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+996..." required />
+
+      <label for="date">Дата заезда:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="guests">Количество гостей:</label>
+      <input type="number" id="guests" name="guests" min="1" max="10" required />
+
+      <input type="text" name="_gotcha" style="display:none" />
+
+      <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+  </section>
+
+  <section id="activities" class="activities" data-aos="fade-up">
+    <h2 data-i18n="activities.title">Наши развлечения</h2>
+
+    <div class="activities-container">
+      <div class="activity-card">
+        <img src="./конная прогулка.jpg" alt="Конные прогулки" class="activity-image" />
+        <h3>Конные прогулки</h3>
+        <p>Погрузитесь в атмосферу древних традиций на конных прогулках по живописным просторам.</p>
+        <a href="/index2.html" class="btn">Подробнее</a>
+
+      </div>
+      <div class="activity-card">
+        <img src="./гончарное исскуство.jpg" alt="Гончарное искусство" class="activity-image" />
+        <h3>Гончарное искусство</h3>
+        <p>Познайте тайны древнего ремесла и создайте собственный керамический шедевр.</p>
+        <a href="/index3.html" class="btn">Подробнее</a>
+
+      </div>
+      <div class="activity-card">
+        <img src="./стрельба из лука.jpg" alt="Кюдо - стрельба из лука" class="activity-image" />
+        <h3>Кюдо - стрельба из лука</h3>
+        <p>Попробуйте себя в традиционном японском искусстве стрельбы из лука.</p>
+        <a href="/index4.html" class="btn">Подробнее</a>
+      </div>
+
+      <div class="activity-card">
+        <img src="./йога и медитация.jpg" alt="Йога и медитация" class="activity-image" />
+        <h3>Йога и медитация</h3>
+        <p>Наслаждайтесь спокойствием и гармонией с практиками йоги и медитации на свежем воздухе.</p>
+        <a href="/index5.html" class="btn">Подробнее</a>
+      </div>
+
+      <div class="activity-card">
+        <img src="./войлок aesctetic.jpg" alt="Традиционное войлочное мастерство" class="activity-image" />
+        <h3>Традиционное войлочное мастерство</h3>
+        <p>Откройте для себя искусство создания войлока с помощью традиционных техник и вдохновения природы.</p>
+        <a href="/index6.html" class="btn">Подробнее</a>
+      </div>
+
+      <div class="activity-card">
+        <img src="./sup-board.jpg" alt="SUP-бординг и каякинг" class="activity-image" />
+        <h3>SUP-бординг и каякинг</h3>
+        <p>Испытайте азарт и удовольствие от водных приключений на SUP-досках и каяках.</p>
+        <a href="/index7.html" class="btn">Подробнее</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="button-container">
+    <button class="book-btn btn" onclick="toggleForm()">Забронировать</button>
+  </div>
+  <section id="booking-form" class="form-section">
+    <form action="https://formspree.io/f/manjjorj" method="POST">
+      <label for="activity">Выберите развлечение:</label>
+      <select id="activity" name="activity" required>
+        <option value="" disabled selected>Выберите</option>
+        <option value="horse">Конная прогулка</option>
+        <option value="pottery">Гончарное искусство</option>
+        <option value="kyudo">Кюдо (стрельба из лука)</option>
+        <option value="yoga">Йога и медитация</option>
+        <option value="voilok">Войлочное мастерство</option>
+        <option value="kayak">SUP-бординг и Каякинг</option>
+      </select>
+
+      <label for="date">Дата:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Время:</label>
+      <input type="time" id="time" name="time" required />
+
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" placeholder="Ваше имя" required />
+
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+996..." required />
+
+      <label for="comment">Комментарий:</label>
+      <textarea id="comment" name="comment" rows="3" placeholder="Например: 'Хочу индивидуальное занятие'"></textarea>
+
+      <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+  </section>
+
+  <section id="map-container" class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1329.1217247588934!2d77.42516436324013!3d42.17812475690752!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skg!4v1748234114176!5m2!1sru!2skg"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+    </iframe>
+  </section>
+
+  <div class="blue">
+    <section class="yurt-section">
+      <div class="yurt-grid">
+        <div class="icons"><a href="#about" data-i18n="nav.about">about</a></div>
+        <div class="icons"><a href="#accommodation" data-i18n="nav.accommodation">rooms</a></div>
+        <div class="icons"><a href="#activities" data-i18n="nav.activities">activities</a></div>
+        <div class="icons"><a href="#booking-form" data-i18n="nav.booking-form">booking</a></div>
+        <div class="icons"><a href="#map-container" data-i18n="nav.map-container">map-container</a></div>
+      </div>
+    </section>
+
+    <div class="footer-section">
+      <div class="footer-column">
+        <h3>Контакты</h3>
+        <ul>
+          <li>Кыргызстан, Южный берег Иссык-Куля</li>
+          <li><a href="tel:+996223246046" style="color: white;">Тел: 0223246046</a></li>
+          <li><a href="mailto:ozgorushevaraniya@gmail.com" style="color: white;">ozgorushevaraniya@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Социальные сети</h3>
+        <div class="social-icons">
+          <a href="https://wa.me/qr/37UMOBCKY2L3L1" target="_blank" aria-label="WhatsApp"><i
+              class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://t.me/wwelosh" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="https://github.com/wwelosh/registration-icon" target="_blank" aria-label="GitHub"><i
+              class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Issyk-Kul Yurt Hotel</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

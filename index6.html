@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Традиционное Войлочное Мастерство</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f6f0;
+      color: #4b3b2b;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      background: url('./войлок\ aesctetic.jpg') center/cover no-repeat fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff9f0;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.8rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    header p {
+      font-size: 1.4rem;
+      font-weight: 300;
+      max-width: 600px;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto 80px;
+      background: #fff9f0;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(75,59,43,0.15);
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 24px;
+      border-bottom: 2px solid #a57e4e;
+      padding-bottom: 8px;
+      color: #6a5439;
+    }
+
+    ul.prices-list {
+      list-style: none;
+      font-size: 1.15rem;
+    }
+
+    ul.prices-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px dotted #d7c8aa;
+      color: #5a4a30;
+    }
+
+    .gallery {
+      margin-top: 30px;
+      display: flex;
+      overflow-x: auto;
+      gap: 14px;
+      padding-bottom: 12px;
+    }
+
+    .gallery img {
+      height: 250px;
+      border-radius: 14px;
+      object-fit: cover;
+      flex-shrink: 0;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(101,82,34,0.4);
+    }
+
+    .info {
+      font-size: 1.1rem;
+      margin-top: 30px;
+      color: #56492e;
+    }
+
+    footer {
+      background: #f0ebe2;
+      color: #4b3b2b;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      border-top: 1px solid #d3c2aa;
+    }
+    footer p {
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: #6a5439;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.4rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .gallery img {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Традиционное Войлочное Мастерство</h1>
+  <p>Погрузитесь в древнее ремесло и создайте свой уникальный войлочный сувенир.</p>
+</header>
+
+<section>
+  <h2>Наши Услуги</h2>
+  <ul class="prices-list">
+    <li><span>Мастер-класс по валянию войлока</span><span>1200 сом</span></li>
+    <li><span>Изготовление тапочек</span><span>2000 сом</span></li>
+    <li><span>Создание коврика</span><span>2500 сом</span></li>
+    <li><span>Подарочный набор сувениров</span><span>4000 сом</span></li>
+  </ul>
+
+  <div class="gallery" aria-label="Галерея войлочного мастерства">
+    <img src="./войлок 1.jpg" alt="Процесс валяния войлока">
+    <img src="./войлол blue.jpg" alt="Готовые войлочные тапочки">
+    <img src="./войлок сбор.jpg" alt="Изготовление коврика из войлока">
+    <img src="./войлок 2.jpg" alt="Мастер и ученики на занятии">
+  </div>
+
+  <p class="info">Наши мастера поделятся с вами секретами традиционного войлочного ремесла, а вы своими руками создадите уникальные изделия, которые станут прекрасным сувениром и напоминанием о вашем отдыхе у южного берега Иссык-Куля.</p>
+</section>
+
+<footer>
+  <p>© 2025 Традиционное Войлочное Мастерство</p>
+  <p>Тел: +996223246046 </p>
+</footer>
+
+</body>
+</html>

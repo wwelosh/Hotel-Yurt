@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Йога и Медитация</title>
+  <style>
+    :root {
+      --bg: #f5f7f3;
+      --text: #2a2a2a;
+      --accent: #9abf9e;
+      --light: #e3e7dd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      background: url('./йога.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 20px;
+      max-width: 600px;
+      color: white;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1.15rem;
+      max-width: 800px;
+    }
+
+    .pricing ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .pricing li {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--light);
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.05rem;
+    }
+
+    .gallery {
+      overflow-x: auto;
+      display: flex;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      height: 280px;
+      border-radius: 12px;
+      object-fit: cover;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+
+    footer {
+      background-color: #2a2a2a;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 100px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .gallery img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Йога и Медитация</h1>
+    <p>Тишина, дыхание, движение — почувствуй единение с собой в ритме природы Иссык-Куля.</p>
+  </header>
+
+  <section class="intro">
+    <h2>О практиках</h2>
+    <p>Йога на берегу Иссык-Куля — это возможность замедлиться, восстановить баланс, почувствовать своё тело и дыхание. Наши практики подходят для начинающих и продолжающих. Занятия проводятся на открытом воздухе или в тёплой юрте с видом на горы.</p>
+  </section>
+
+  <section class="pricing">
+    <h2>Цены</h2>
+    <ul>
+      <li><span>Групповое занятие (60 мин)</span><span>400 сом</span></li>
+      <li><span>Индивидуальное (60 мин)</span><span>700 сом</span></li>
+      <li><span>Утренняя медитация (30 мин)</span><span>300 сом</span></li>
+      <li><span>Пакет 5 занятий</span><span>1600 сом</span></li>
+    </ul>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Атмосфера</h2>
+    <div class="gallery">
+      <img src="./йога1.jpg" alt="Йога у озера">
+      <img src="./йога2.jpg" alt="Медитация на природе">
+      <img src="./йога4.jpg" alt="Йога в горах">
+    </div>
+  </section>
+
+ 
+  <footer>
+    <p>© 2025 Йога у Иссык-Куля | Простые практики. Чистое дыхание.</p>
+  </footer>
+
+</body>
+</html>

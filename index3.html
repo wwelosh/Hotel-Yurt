@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Гончарное Искусство у Иссык-Куля</title>
+  <style>
+    :root {
+      --bg: #f5f0ea;
+      --text: #2e2b28;
+      --accent: #b87d5a;
+      --light: #e9dfd4;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      background: url('./гончарное\ исскуство.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 80px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      max-width: 800px;
+      color: white;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    header p {
+      font-size: 1.4rem;
+      margin-top: 20px;
+      color: white;
+      max-width: 600px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1.15rem;
+      max-width: 800px;
+    }
+
+    .pricing ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .pricing li {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--light);
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.05rem;
+    }
+
+    .gallery {
+      overflow-x: auto;
+      display: flex;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      height: 280px;
+      border-radius: 12px;
+      object-fit: cover;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+ 
+
+    footer {
+      background-color: #2e2b28;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 100px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 40px 20px;
+        text-align: left;
+      }
+
+      header h1 {
+        font-size: 2.3rem;
+      }
+
+      .gallery img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Гончарное Искусство</h1>
+    <p>Прикоснись к искусству форм и глины.</p>
+  </header>
+
+  <section class="intro">
+    <h2>О занятии</h2>
+    <p>На южном берегу озера Иссык-Куль, в тёплой атмосфере юрточной гостиницы, вы можете попробовать гончарное ремесло. Это не студия, а часть неспешного отдыха — мастер покажет основы, и вы сможете создать свой глиняный сосуд или чашу на память.</p>
+  </section>
+
+  <section class="pricing">
+    <h2>Стоимость</h2>
+    <ul>
+      <li><span>Пробное занятие (30 мин)</span><span>400 сом</span></li>
+      <li><span>Работа с гончарным кругом (1 час)</span><span>700 сом</span></li>
+      <li><span>Изделие на обжиг (по желанию)</span><span>от 500 сом</span></li>
+    </ul>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Примеры работ</h2>
+    <div class="gallery">
+      <img src="./гончарное эстетик.jpg" alt="Гончарное изделие 1">
+      <img src="./гончарное исскуство.jpg" alt="Гончарное изделие 2">
+      <img src="./гончарное.jpg" alt="Гончарное изделие 3">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Юрточная гостиница | Южный Иссык-Куль</p>
+  </footer>
+
+</body>
+</html>

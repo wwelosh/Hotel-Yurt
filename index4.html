@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кюдо — Искусство Японской Стрельбы</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Zen Kaku Gothic New', sans-serif;
+      background-color: #f7f4ef;
+      color: #1a1a1a;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: url('кюда Япоия.jpg') center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      font-family: 'Roboto Slab', serif;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-top: 20px;
+      text-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    }
+
+    .gallery {
+      overflow-x: auto;
+      display: flex;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .gallery img {
+      height: 280px;
+      border-radius: 12px;
+      object-fit: cover;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #e53935;
+    }
+
+    .prices {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .price-card {
+      background: white;
+      border: 2px solid #e0e0e0;
+      border-left: 6px solid #e53935;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .price-card h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #333;
+    }
+
+    .price-card p {
+      margin-bottom: 0;
+    }
+
+    footer {
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer a {
+      color: #e53935;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .gallery-scroll img {
+        max-height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>КЮДО</h1>
+    <p>Японское искусство стрельбы из лука. Дисциплина. Спокойствие. Движение души.</p>
+  </header>
+
+
+
+  <section>
+    <h2>О занятиях</h2>
+    <p>Кюдо — это путь к себе через точность, дыхание и движение. Мы проводим индивидуальные и групповые тренировки для начинающих и продвинутых. Все занятия проходят с опытным сенсеем в духе традиций Японии.</p>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Атмосфера</h2>
+    <div class="gallery">
+      <img src="./лук2.jpg" alt="стрельба в горах">
+      <img src="./лук.jpg" alt="групповой">
+      <img src="./стрельба из лука.jpg" alt="на коне">
+      <img src="./лук7.jpg" alt="мишень">
+      <img src="./лук4.jpg" alt="кюдо">
+      
+    </div>
+  </section>
+
+  <section>
+    <h2>Цены</h2>
+    <div class="prices">
+      <div class="price-card">
+        <h3>Разовое занятие</h3>
+        <p>800 сом — 90 минут</p>
+      </div>
+      <div class="price-card">
+        <h3>Абонемент на месяц</h3>
+        <p>2800 сом — 4 занятия</p>
+      </div>
+      <div class="price-card">
+        <h3>Индивидуальное занятие</h3>
+        <p>1800 сом — 90 минут (1 на 1 с мастером)</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p> Тел: +996223246046</p>
+    <p>© 2025 Kyudo Club</p>
+  </footer>
+
+</body>
+</html>

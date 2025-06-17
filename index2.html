@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Конные Прогулки</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf4;
+      color: #333;
+    }
+
+    /* Параллакс-заголовок */
+    header {
+      height: 100vh;
+      background: url('./конная\ прогулка.jpg') center/cover no-repeat fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    }
+
+    header h1 {
+      font-size: 4rem;
+      animation: slideIn 1s ease-out;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Цены */
+    .prices {
+      background: #fef6ed;
+      border-left: 6px solid #c99e66;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .prices h2 {
+      font-size: 2.2rem;
+      color: #7b4f23;
+      margin-bottom: 20px;
+    }
+
+    .prices ul {
+      list-style: none;
+      font-size: 1.1rem;
+    }
+
+    .prices li {
+      padding: 12px 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #d8c3a5;
+    }
+
+    /* Галерея */
+    .gallery-container {
+      padding: 20px 0;
+    }
+
+    .gallery-scroll {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 12px;
+      padding: 10px;
+    }
+
+    .gallery-scroll::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .gallery-scroll::-webkit-scrollbar-thumb {
+      background: #c99e66;
+      border-radius: 4px;
+    }
+
+    .gallery-scroll img {
+      height: 300px;
+      flex-shrink: 0;
+      border-radius: 14px;
+      object-fit: cover;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery-scroll img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      cursor: pointer;
+    }
+
+    /* Описание */
+    .info-section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.03);
+    }
+
+    .info-section h2 {
+      color: #5f3d26;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .info-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+
+    footer {
+      background: #5a3e2b;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      .gallery-scroll img {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1> Конные Прогулки</h1>
+    <p>Свобода. Природа. Гармония с лошадьми.</p>
+  </header>
+
+  <section class="prices">
+    <h2>Наши Услуги</h2>
+    <ul>
+      <li><span>Прогулка по лесу — 30 мин</span><span>700 сом</span></li>
+      <li><span>Прогулка на закате — 1 час</span><span>1300 сом</span></li>
+      <li><span>Фотосессия с лошадьми</span><span>2000 сом</span></li>
+      <li><span>Семейный выезд</span><span>3500 сом</span></li>
+    </ul>
+  </section>
+
+  <section class="gallery-container">
+    <div class="gallery-scroll">
+      <img src="./конюшня.jpg" alt="Image 1">
+      <img src="./кони у озера.webp" alt="Image 2">
+      <img src="./кони эстетик.jpg" alt="Image 4">
+      <img src="./стрельба из лука.jpg" alt="Image 5">
+    </div>
+  </section>
+
+  <section class="info-section">
+    <h2>🐴 О нас</h2>
+    <p>Мы организуем уникальные прогулки верхом в живописной местности, где вы сможете ощутить настоящую связь с природой. Наши лошади добрые и обученные, а маршруты — безопасны и интересны. Идеально для пар, семей, фотосессий или просто уединения от городской суеты.</p>
+  </section>
+
+
+  <footer>
+    <p>© 2025 Конные Прогулки. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>

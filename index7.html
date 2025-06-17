@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SUP-бординг и Каякинг на Иссык-Куле</title>
+  <head>
+    <body>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #e6f7ff;
+      color: #0b3d91;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      background: url('./sup-board.jpg') center/cover no-repeat fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #e0f0ff;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.8rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    header p {
+      font-size: 1.4rem;
+      font-weight: 300;
+      max-width: 650px;
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto 80px;
+      background: #f0fbff;
+      padding: 40px 30px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(11,61,145,0.15);
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 24px;
+      border-bottom: 3px solid #3a87d7;
+      padding-bottom: 8px;
+      color: #064a9a;
+    }
+
+    ul.prices-list {
+      list-style: none;
+      font-size: 1.15rem;
+      color: #0b3d91;
+    }
+
+    ul.prices-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px dashed #9cc9f0;
+    }
+
+    .gallery {
+      margin-top: 30px;
+      display: flex;
+      overflow-x: auto;
+      gap: 14px;
+      padding-bottom: 12px;
+    }
+
+    .gallery img {
+      height: 250px;
+      border-radius: 14px;
+      object-fit: cover;
+      flex-shrink: 0;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(58,135,215,0.5);
+    }
+
+    .info {
+      font-size: 1.1rem;
+      margin-top: 30px;
+      color: #064a9a;
+    }
+
+    .cta {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .cta a {
+      background: #3a87d7;
+      color: #e0f0ff;
+      padding: 14px 36px;
+      font-size: 1.1rem;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    .cta a:hover {
+      background: #2b66b3;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 40px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    form input, form textarea {
+      padding: 14px 16px;
+      border-radius: 8px;
+      border: 1.5px solid #9cc9f0;
+      font-size: 1rem;
+      font-family: inherit;
+      color: #064a9a;
+    }
+
+    form button {
+      background: #3a87d7;
+      border: none;
+      color: #e0f0ff;
+      padding: 14px;
+      font-size: 1.1rem;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background: #2b66b3;
+    }
+
+
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.4rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .gallery img {
+        height: 180px;
+      }
+    }
+
+    footer {
+  background-color: rgba(217, 234, 247, 0.7); /* полупрозрачный */
+  color: #0b3d91;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.95rem;
+  border-top: 1px solid #9cc9f0;
+}
+  </style>
+
+<header>
+  <h1>SUP-бординг и Каякинг на Иссык-Куле</h1>
+  <p>Исследуйте горные воды озера, наслаждаясь активным отдыхом на SUP-борде или каяке.</p>
+</header>
+
+<section>
+  <h2>Наши Услуги</h2>
+  <ul class="prices-list">
+    <li><span>Аренда SUP-борда — 1 час</span><span>600 сом</span></li>
+    <li><span>Аренда каяка — 1 час</span><span>800 сом</span></li>
+    <li><span>Групповые экскурсии</span><span>1200 сом</span></li>
+    <li><span>Уроки для новичков</span><span>1000 сом</span></li>
+  </ul>
+  
+
+  <div class="gallery" aria-label="Галерея SUP-бординга и каякинга">
+    <img src="./kayak.jpg" alt="SUP-борд на озере">
+    <img src="./kayaking-mountain.jpg" alt="Каяк на воде">
+    <img src="./sup-blue.webp" alt="Группа на SUP-бордах">
+    <img src="./sup-board.jpg" alt="Каяк на фоне гор">
+  </div>
+
+  <footer>
+    <p>© 2025 SUP и Каяк на Иссык-Куле | Активный отдых. Настоящие приключения.</p>
+  </footer>
+  
+</head>
+</body>
